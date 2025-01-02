@@ -1,0 +1,20 @@
+﻿<h1 class="text-center mt-5 mb-5"> 🔎🔎🔎 Search the recipes you want 🔎🔎🔎 </h1>
+
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="ShowSearchResults" class="shadow p-5 rounded bg-warning">
+            <div class="form-group mb-3">
+                <label for="SearchPhrase" class="control-label"></label>
+                <input name="SearchPhrase" id="SearchPhrase" class="form-control" placeholder="Enter the dish you want to cook" />
+            </div>
+            <div class="form-group mb-3 text-center">
+                <input type="submit" value="Search" class="btn btn-success btn-lg mt-2" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a class="btn btn-secondary btn-lg" asp-action="Index">Back to List</a>
+</div>
